@@ -296,6 +296,15 @@ hr {
   color: #1f1f1f;
 }
 
+.post .post_footer .prevnext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #555;
+}
+
 .page_tags {
   text-align: center;
   margin-top: 50px;

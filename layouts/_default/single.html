@@ -25,6 +25,21 @@
                             </div>
                         </div>
                         {{ end }}
+                        <!-- https://www.jianshu.com/p/0b9aecff290c -->
+                        <div class="prevnext">
+                            {{ if .PrevInSection }}
+                            <span class="is-inline">
+                                <a href="{{ .PrevInSection.URL }}" class="pagination-previous">&larr;
+                                    {{ .PrevInSection.Title}}</a>
+                            </span>
+                            {{ end }}
+                            {{ if .NextInSection }}
+                            <span class="is-inline is-pulled-right">
+                                <a href="{{ .NextInSection.URL }}" class="pagination-previous">
+                                    {{ .NextInSection.Title}} &rarr;</a>
+                            </span>
+                            {{ end }}
+                        </div>
                     </div>
                 </div>
                 <!-- 评论系统 -->
